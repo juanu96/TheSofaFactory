@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+#TheSofaFactory, #TheSofaFactory-options :is(.mx-auto) {
+  margin-left: auto;
+  margin-right: auto
+}
+#TheSofaFactory, #TheSofaFactory-options :is(.mt-20) {
+  margin-top: 0rem
+}
+#TheSofaFactory, #TheSofaFactory-options :is(.rounded-lg) {
+  border-radius: 0rem
+}
+#TheSofaFactory, #TheSofaFactory-options :is(.bg-green-800) {
+  --tw-bg-opacity: 1;
+  background-color: white !important;
+}
+#TheSofaFactory, #TheSofaFactory-options :is(.p-6) {
+  padding: 0rem
+}
+#TheSofaFactory, #TheSofaFactory-options :is(.text-white) {
+  --tw-text-opacity: 1;
+  color: black
+}
+
+#TheSofaFactory, #TheSofaFactory-options :is(.absolute) {
+  position: relative !important;
+}

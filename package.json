@@ -1,0 +1,42 @@
+{
+  "name": "react-wp",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "package": "vite build && node ./scripts/package.js",
+    "init": "node ./scripts/init.js"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.8.10",
+    "graphql": "^16.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.70.0",
+    "swiper": "^11.0.5"
+  },
+  "devDependencies": {
+    "@inquirer/prompts": "^3.2.0",
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@vitejs/plugin-react": "^4.0.3",
+    "@vitejs/plugin-react-swc": "^3.4.0",
+    "adm-zip": "^0.5.10",
+    "autoprefixer": "^10.4.16",
+    "chalk": "^5.3.0",
+    "eslint": "^8.45.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "mv": "^2.1.1",
+    "postcss": "^8.4.31",
+    "postcss-nesting": "^12.0.1",
+    "tailwindcss": "^3.3.3",
+    "vite": "^4.4.11",
+    "zod": "^3.22.4"
+  }
+}

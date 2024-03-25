@@ -1,0 +1,93 @@
+#TheSofaFactory {
+    position: relative !important;
+  .sofas-styles-selector {
+    @apply flex flex-col justify-center items-center gap-6;
+    img {
+      @apply w-full h-full p-6 lg:p-9 border-[5px] border-solid border-transparent rounded-full opacity-40 object-contain;
+    }
+    h3 {
+      @apply font-semibold text-center text-2xl lg:text-xl text-[#1D1D1B] opacity-40;
+      font-family: "Montserrat", Helvetica, Arial, Lucida, sans-serif;
+    }
+  }
+  .sofas-styles-selector-active {
+    img {
+      @apply border-[5px] border-solid border-[#EFD046] rounded-full opacity-100;
+    }
+    h3 {
+      @apply opacity-100;
+    }
+  }
+
+  .sofa-information {
+    @apply flex flex-col lg:flex-row items-center justify-center gap-[5%];
+    .vertical-slider {
+      @apply overflow-hidden px-2 py-2 lg:px-0 lg:py-5 w-fit my-10 mb-0 lg:my-0 lg:w-1/12  lg:h-fit border-2 border-solid border-[#EFD046] rounded-xl relative flex;
+      .item-slider {
+        @apply relative;
+        height: 64px !important;
+        width: min-content !important;
+        margin-right: 0 !important;
+        margin-left: 2px !important;
+        margin-right: 2px !important;
+        .gallery-sofas {
+          @apply w-16 h-16 border border-solid border-transparent rounded-xl overflow-hidden px-3 flex cursor-pointer;
+          img {
+            @apply object-contain;
+          }
+        }
+
+        .gallery-sofas-active {
+          @apply border-[#EFD046];
+        }
+      }
+    }
+    .information {
+      @apply flex flex-col md:flex-row justify-center items-center gap-[5%] w-11/12;
+
+      .information-image {
+        @apply w-full md:w-1/2;
+      }
+      .information-content {
+        @apply w-full md:w-1/2;
+
+        @media all and (max-width: 768px) {
+          text-align: -webkit-center;
+        }
+        h2 {
+          @apply text-[#2C2E31] text-center md:text-left font-bold text-[26px] mb-5;
+          font-family: "Montserrat", Helvetica, Arial, Lucida, sans-serif;
+        }
+        h5 {
+          @apply text-[#2C2E31] text-center md:text-left font-semibold text-xl mb-5;
+          font-family: "Montserrat", Helvetica, Arial, Lucida, sans-serif;
+        }
+        p {
+          @apply text-base text-center md:text-left text-[#4A4A49] mb-5;
+          font-family: "Montserrat", Helvetica, Arial, Lucida, sans-serif;
+        }
+        .button-sofa {
+          @apply bg-[#EFD046] text-center md:text-left py-2 lg:py-3 px-10 rounded-lg font-semibold text-sm lg:text-base text-[#1D1D1B] w-fit cursor-pointer;
+          font-family: "Montserrat", Helvetica, Arial, Lucida, sans-serif;
+        }
+      }
+    }
+  }
+
+  .sofa-content {
+    @apply text-base text-center md:text-left text-[#4A4A49] my-5;
+    font-family: "Montserrat", Helvetica, Arial, Lucida, sans-serif;
+  }
+
+  .swiper-button-prev, .swiper-button-next{
+    @apply h-10 w-10 flex items-center justify-center rounded-full hover:bg-[#EFD046] border-0;
+    min-width: 2.5rem;
+  }
+
+  .slider-arrow{
+    @apply flex items-center justify-center gap-5 w-full h-auto relative;
+    .slider-container-all{
+      @apply w-[70%] lg:w-full;
+    }
+  }
+}
