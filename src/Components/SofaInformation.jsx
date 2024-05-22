@@ -123,7 +123,7 @@ const SofaInformation = () => {
             ) : null}
 
             <a
-              href="https://shop.sofa.gruposantamaria.cr/collections"
+              href={store.CurrentSofa?.sofaContent?.link ? store.CurrentSofa?.sofaContent?.link : "https://shop.sofa.gruposantamaria.cr/collections"}
               target="_blank"
               rel="noreferrer"
               className="button-sofa" /* onClick={() => showModal()} */

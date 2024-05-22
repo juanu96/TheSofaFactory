@@ -17,6 +17,7 @@ const SOFAS = gql`
         sofa {
           name
           sofaContent {
+            link
             name
             price
             information
